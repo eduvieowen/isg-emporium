@@ -12,7 +12,7 @@ import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQty, onRemove } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, showCart, setShowCart, toggleCartItemQty, onRemove } = useStateContext();
 
   // stripe checkout request
   const handleCheckout = async () => {
@@ -37,15 +37,17 @@ const Cart = () => {
     stripe.redirectToCheckout({ sessionId: data.id });
   }
 
+  const toggleShowCart = () => !showCart ? setShowCart(true) : setShowCart(false);
+
   return (
-    <div className='cart-wrapper' ref={cartRef}>
+    <div className='cart-wrapper' ref={cartRef} onClick={toggleShowCart}>
 
       <div className='cart-container'>
 
         <button
           type='button'
           className='cart-heading'
-          onClick={() => setShowCart(false)}
+          onClick={toggleShowCart}
         >
           <AiOutlineLeft />
           <span className='heading'>Your Cart</span>
@@ -62,7 +64,7 @@ const Cart = () => {
             <Link href='/'>
               <button
                 type='button'
-                onClick={() => setShowCart(false)}
+                onClick={toggleShowCart}
                 className='btn'
               >
                 Contine Shopping
@@ -135,7 +137,7 @@ const Cart = () => {
               <button
                 type='button'
                 className='btn'
-                onClick={() => handleCheckout}
+                onClick={handleCheckout}
               >
                 Pay with Stripe
               </button>
