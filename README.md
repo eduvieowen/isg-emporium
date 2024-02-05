@@ -2,6 +2,10 @@
 
 Get ready to embark on a shopping adventure like no other at the ISG Emporium! 🛍️ Dive into a world of endless possibilities where technology meets style and convenience.
 
+<img width="1470" alt="Screenshot 2024-02-05 at 18 22 56" src="https://github.com/eduvieowen/isg-emporium/assets/103185065/93cb12a7-3bb3-4e61-bd6b-1e0dd2879031">
+
+<br><br>
+
 ## Tech Behind the Scenes ✨
 
 At the heart of ISG Emporium lies a blend of cutting-edge technologies designed to make your shopping experience smooth and delightful:
