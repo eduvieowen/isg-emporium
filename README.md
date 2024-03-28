@@ -14,7 +14,7 @@ At the heart of ISG Emporium lies a blend of cutting-edge technologies designed 
 - **React.js**: Crafting a visually stunning and intuitive interface that keeps you hooked.
 - **Sanity Backend**: Ensuring a seamless management system for our ever-growing product catalog.
 - **Stripe**: Safeguarding your transactions with the latest in secure payment processing.
-- **Framer Motion**: Adding a dash of magic with captivating animations and transitions.
+- **Framer Motion**: Adding a dash of playfulness with captivating animations and transitions.
 
 ## Why Choose ISG Emporium?
 
